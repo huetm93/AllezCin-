@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>AllezCine.be</title>
+</head>
+<body>
+<!-- modal+18--><!-- modal+18--><!-- modal+18--><!-- modal+18-->
+    <div id="dialog-message" class="modal18 row">
+        <p class='text_modal18 col-12'><span class=" ui-icon-alert"></span >Avez-vous plus de 18 ans?</p>
+    </div>
+
+    
+<!--Navbar--><!--Navbar--><!--Navbar--><!--Navbar--><!--Navbar-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark navglobal" >
+        <a class="navbar-brand" href="#"><img src="assets/img/logoallezcine.png" alt="logoallezcine"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarsExample04">
+          <ul class="navbar-nav mr-auto">
+            <li class="">
+              <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#FeaturedM">MOVIES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#FeaturedS">SERIES</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown04 " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SHOP MOVIES</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown04">
+                <a class="dropdown-item" href="#shop">Actions</a>
+                <a class="dropdown-item" href="#shop">Another action</a>
+                <a class="dropdown-item" href="#shop">Policiers</a>
+              </div>
+            </li>
+            <li >
+                <a class="nav-link nav_contact " href="#contact">CONTACT</a>
+              </li>
+          </ul>
+          <form class="form-inline my-2 my-md-0">
+            <input class="form-control" type="text" placeholder="Search">&nbsp;<i class="fas fa-search"></i>
+          </form>
+        </div>
+      </nav>
+           
+<!--Slides carroussel--><!--Slides carroussel--><!--Slides carroussel--><!--Slides carroussel--><!--Slides carroussel-->
+<main>
+    <div class="jumbotron jumbotron-fluid jmb">
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <!-- indicateurs -->
+            <ol class="carousel-indicators decaler-bas">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+        <!-- images slides-->
+        <div class="carousel-inner">
+    
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="assets/img/header.jpg" alt="First slide">
+                <!--Texte du 1er slide-->
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>LATEST <SPAN class="red-title">ON</SPAN>LINE <span class="red-title">MO</span>VIES</h1>
+                    <p>IN SPACE NO ONE CAN HEAR YOU SREAM.</p>
+                    <button type="button" class="btn btn-danger btn-red">WATCH TRAILER</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="assets/img/header2.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="assets/img/header3.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="assets/img/header4.jpg" alt="Fourth slide">
+            </div>
+        </div>
+    
+    
+          </div> <!--  indicators-->
+          <div class="login-bar">
+              <i class="fas fa-phone"></i>
+              <p class="tel">(+000) 009 455 4088</p>
+              <button type="button" class="btn btn-dark btn-sombre" id="myBtn" data-toggle="modal" data-target="#myModal">Login</button>                    
+                    <button type="button" class="btn btn-dark btn-sombre "id="myBtnR" data-toggle="modal" data-target="#myModalR">Register</button>   
+          </div>
+    </div>
+    
+<!--MODAL LOG&REGISTER--><!--MODAL LOG&REGISTER--><!--MODAL LOG&REGISTER--><!--MODAL LOG&REGISTER--><!--MODAL LOG&REGISTER--><!--MODAL LOG&REGISTER--><!--MODAL LOG&REGISTER-->
+                <div class="container">           
+                  
+                        <!-- The Modal -->
+                        <div class="modal" id="myModal">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                            
+                              <!-- Modal Header -->
+                              <div class="modal-header">
+                                <h4 class="modal-title">Login</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              </div>
+                              
+                              <!-- Modal body -->
+                              <div class="modal-body">
+                                    <form role="form">
+                                            <div class="form-group">
+                                            <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+                                            <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                                            </div>
+                                            <div class="form-group">
+                                            <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+                                            <input type="text" class="form-control" id="psw" placeholder="Enter password">
+                                            </div>
+                                            <div class="checkbox">
+                                            <label><input type="checkbox" value="" checked>Remember me</label>
+                                            </div>
+                                            <button type="submit" class="btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+                                    </form>
+                              </div>
+                               <!-- Modal footer -->
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                                <div class="modal-footer">                                   
+                                        <p>Not a member? <a href="#">Sign Up</a></p>
+                                        <p>Forgot <a href="#">Password?</a></p>
+                                        </div>
+                              </div>
+                              
+                            </div>
+                          </div>
+                        </div>                    
+                      </div>                  
+                         <!--modal register-->                      
+                              <!-- The Modal -->
+                              <div class="modal" id="myModalR">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                  
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                      <h4 class="modal-title">Register</h4>
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                            <div class="form-group">
+                                                    <label for="usrname"><span class="glyphicon glyphicon-user"></span> Nom</label>
+                                                    <input type="text" class="form-control" id="usrname" placeholder="Insérez votre nom complet">
+                                                    </div>
+                                            <div class="form-group">
+                                                    <label for="usrname"><span class="glyphicon glyphicon-user"></span> Mail</label>
+                                                    <input type="text" class="form-control" id="usrname" placeholder="Insérez votre e-mail">
+                                                    </div>
+                                            <div class="form-group">
+                                                    <label for="usrname"><span class="glyphicon glyphicon-user"></span> Mot de Passe</label>
+                                                    <input type="text" class="form-control" id="usrname" placeholder="Insérez votre mot de passe">
+                                                    </div>
+                                            <div class="form-group">
+                                                    <label for="usrname"><span class="glyphicon glyphicon-user"></span> Mot de Passe confirmé</label>
+                                                    <input type="text" class="form-control" id="usrname" placeholder="Validez votre mot de passe">
+                                                    </div>
+                                            <div class="checkbox">
+                                                    <label><input type="checkbox" value="" checked>Conditions générales d'utilisation </label>
+                                                    </div>
+                                            <button type="submit" class="btn-block"><span class="glyphicon glyphicon-off"></span> Register</button>
+                                    </div>
+                                    
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                                      
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                              
+                            </div>
+                <!-- Movies --><!-- Movies --><!-- Movies --><!-- Movies --><!-- Movies -->
+<!-- Movies --><!-- Movies --><!-- Movies --><!-- Movies --><!-- Movies -->
+
+<div class=" container">
+    <div class=" imgmovies  row " >   
+        <div class="col-md-2 col-6 movies"><a data-toggle="modal" href="#batman"><img  class = 'img-fluid' src="assets/img/batmanmovie-2017-comedie.jpg" alt="Card image cap"></a><h3 class="sizemovies">Batman Movie</h3><p class="alignP">2017</p></div>
+        <div class="col-md-2 col-6 movies"><a data-toggle="modal" href="#inception"><img  class = 'img-fluid' src="assets/img/inception-2010-scifi.jpg" alt="Card image cap"></a><h3 class="sizemovies">Inception</h3><p class="alignP">2010</p></div>
+        <div class="col-md-2 col-6 movies"><a data-toggle="modal" href="#intouchable"><img  class = 'img-fluid' src="assets/img/intouchables-2011-comedie.jpg" alt="Card image cap"></a><h3 class="sizemovies">Intouchables</h3><p class="alignP">2012</p></div>
+        <div class="col-md-2 col-6 movies"><a data-toggle="modal" href="#shutter"><img  class = 'img-fluid' src="assets/img/shutterisland-2010-thriller.jpg" alt="Card image cap"></a><h3 class="sizemovies">Shutter Island</h3><p class="alignP">2010</p></div>
+        <div class="col-md-2 col-6 movies"><a data-toggle="modal" href="#star"><img  class = 'img-fluid' src="assets/img/starwarsempire-1980-scifi.jpg" alt="Card image cap"></a><h3 class="sizemovies">Star wars 4</h3><p class="alignP">1980</p></div>
+    </div>
+</div>
+
+<!-- SocialBar--><!-- SocialBar--><!-- SocialBar--><!-- SocialBar-->
+    <nav class='social_navbar'>
+            <ul class='social_global'>        
+                <li class ='social_link'><div class='text texttwitter'><p class = 'ptwiter'>Twitter</p><i class='fab fa-twitter'></i></div></li>
+                <li class ='social_link'><div class='text textfacebook'><p class = 'pfacebook'>Facebook</p><i class='logof fab fa-facebook-f'></i></div></li>
+                <li class ='social_link'><div class='text textdrib'><p class = 'pdrib'>Dribbble</p><i class='fab fa-dribbble'></i></div></li>
+                <li class ='social_link'><div class='text textgg'><p class = 'pgg'>Google+</p><i class='logog fab fa-google-plus-g'></i></div></li>
+            </ul>
+        </nav>
+   
+<!-- Featured Movies--><!-- Featured Movies--><!-- Featured Movies-->
+    <div class="featured_global container" id='FeaturedM'> 
+        <h2 class = "titre-section">FEATURED MOVIES</h2>
+            <div class ='btn_global'>
+                <a class = 'btnFeatured btnAll'>All</a>
+                <a class="btnFeatured btnAction">Actions</a>
+                <a class="btnFeatured btnPolicier">Policiers</a>
+                
+            </div>
+            <div class ='slideGlobal container'>
+            <div class= 'slideAction row'>
+                <div class= "card_featured col-sm-6 col-md-2 " >
+                    <img class = 'img-fluid' src="assets/img/batmanmovie-2017-comedie.jpg" alt="batman">
+                    <h3>Batman movie</h3>
+                    <p class='p_featured' >2011</p>
+                </div>
+                <div class= "card_featured col-sm-6 col-md-2"  >
+                    <img class = 'img-fluid' src="assets/img/hostel-2005-thriller.jpg" alt="batman">
+                    <h3>Hostel</h3>
+                    <p class='p_featured'>2005</p>
+                </div>
+                <div class= "card_featured col-sm-6 col-md-2"  >
+                    <img class = 'img-fluid' src="assets/img/inception-2010-scifi.jpg" alt="batman">
+                    <h3>Inception</h3>
+                    <p class='p_featured'>2010</p>
+                </div>
+                <div class= "card_featured col-sm-6 col-md-2"  >
+                    <img class = 'img-fluid' src="assets/img/intouchables-2011-comedie.jpg" alt="batman">
+                    <h3>Intouchables</h3>
+                    <p class='p_featured'>2011</p>
+                </div>
+                <div class= "card_featured col-sm-6 col-md-2"  >
+                    <img class = 'img-fluid' src="assets/img/lepatientanglais-1996-dramatique.jpg" alt="batman">
+                    <h3>Le patient anglais</h3>
+                    <p class='p_featured'>1996</p>
+                </div>
+                <div class= "card_featured col-sm-6 col-md-2" >
+                    <img class = 'img-fluid ' src="assets/img/lesdeuxtours-2002-aventure.jpg" alt="batman">
+                    <h3>Les deux tours</h3>
+                    <p class='p_featured'>2002</p>
+                </div>
+            </div>
+            <div class= 'slidePolicier row '>
+                <div class= "card_featured col-sm-6 col-md-2 " >
+                    <img class = 'img-fluid' src="assets/img/seven-1995-thriller.jpg" alt="batman">
+                    <h3>Seven</h3>
+                    <p class='p_featured'>1995</p>
+                </div>
+                <div class= "card_featured col-sm-6 col-md-2" >
+                    <img class = 'img-fluid' src="assets/img/shutterisland-2010-thriller.jpg" alt="batman">
+                    <h3>Shutter island</h3>
+                    <p class='p_featured'>2010</p>
+                </div>
+                <div class= "card_featured col-sm-6 col-md-2" >
+                    <img class = 'img-fluid' src="assets/img/starwarsempire-1980-scifi.jpg" alt="batman">
+                    <h3>Star Wars</h3>
+                    <p class='p_featured'>1980</p>
+                </div>
+                <div class= "card_featured col-sm-6 col-md-2" >
+                    <img class = 'img-fluid' src="assets/img/Survivestyle5-2004-comedie.jpg" alt="batman">
+                    <h3>Survive style 5</h3>
+                    <p class='p_featured'>2004</p>
+                </div>
+                <div class= "card_featured col-sm-6 col-md-2" >
+                    <img class = 'img-fluid' src="assets/img/swissarmyman-2016-comedie.jpg" alt="batman">
+                    <h3>Swiss army man</h3>
+                    <p class='p_featured'>2016</p>
+                </div>
+                <div class= "card_featured col-sm-6 col-md-2" >
+                    <img class = 'img-fluid ' src="assets/img/thefall-2006-dramatique.jpg" alt="batman">
+                    <h3>The fall</h3>
+                    <p class='p_featured'>2006</p>
+                </div>
+            </div>
+            <div class= 'slideAction2 row'>
+                <div class= "card_featured col-sm-6 col-md-2 " >
+                    <img class = 'img-fluid' src="assets/img/zoolander-2001-comedie.jpg" alt="batman">
+                    <h3>Zoolander</h3>
+                    <p class='p_featured'>2001</p>
+                </div>
+                <div class= "card_featured col-sm-6 col-md-2"  >
+                    <img class = 'img-fluid' src="assets/img/hostel-2005-thriller.jpg" alt="batman">
+                    <h3>Hostel</h3>
+                    <p class='p_featured'>2005</p>
+                </div>
+                <div class= "card_featured col-sm-6 col-md-2"  >
+                    <img class = 'img-fluid' src="assets/img/inception-2010-scifi.jpg" alt="batman">
+                    <h3>Inception</h3>
+                    <p class='p_featured'>2010</p>
+                </div>
+                <div class= "card_featured col-sm-6 col-md-2"  >
+                    <img class = 'img-fluid' src="assets/img/intouchables-2011-comedie.jpg" alt="batman">
+                    <h3>Intouchables</h3>
+                    <p class='p_featured'>2011</p>
+                </div>
+                <div class= "card_featured col-sm-6 col-md-2"  >
+                    <img class = 'img-fluid' src="assets/img/lepatientanglais-1996-dramatique.jpg" alt="batman">
+                    <h3>Le patient anglais</h3>
+                    <p class='p_featured'>1996</p>
+                </div>
+                <div class= "card_featured col-sm-6 col-md-2" >
+                    <img class = 'img-fluid ' src="assets/img/lesdeuxtours-2002-aventure.jpg" alt="batman">
+                    <h3>Les deux tours</h3>
+                    <p class='p_featured'>2002</p>
+                </div>
+            </div>
+            <div class= 'slidePolicier2 row'>
+                    <div class= "card_featured col-sm-6 col-md-2 " >
+                        <img class = 'img-fluid' src="assets/img/WhatWeDoInTheShadows-2014-comedie.jpg" alt="batman">
+                        <h3>What we do</h3>
+                        <p class='p_featured'>2014</p>
+                    </div>
+                    <div class= "card_featured col-sm-6 col-md-2" >
+                        <img class = 'img-fluid' src="assets/img/shutterisland-2010-thriller.jpg" alt="batman">
+                        <h3>Shutter island</h3>
+                        <p>2010</p>
+                    </div>
+                    <div class= "card_featured col-sm-6 col-md-2" >
+                        <img class = 'img-fluid' src="assets/img/starwarsempire-1980-scifi.jpg" alt="batman">
+                        <h3>Star Wars</h3>
+                        <p class='p_featured'>1980</p>
+                    </div>
+                    <div class= "card_featured col-sm-6 col-md-2" >
+                        <img class = 'img-fluid' src="assets/img/Survivestyle5-2004-comedie.jpg" alt="batman">
+                        <h3>Survive style 5</h3>
+                        <p class='p_featured'>2004</p>
+                    </div>
+                    <div class= "card_featured col-sm-6 col-md-2" >
+                        <img class = 'img-fluid' src="assets/img/swissarmyman-2016-comedie.jpg" alt="batman">
+                        <h3>Swiss army man</h3>
+                        <p class='p_featured'>2016</p>
+                    </div>
+                    <div class= "card_featured col-sm-6 col-md-2" >
+                        <img class = 'img-fluid ' src="assets/img/thefall-2006-dramatique.jpg" alt="batman">
+                        <h3>The fall</h3>
+                        <p class='p_featured'>2006</p>
+                    </div>
+                </div>    
+        </div>
+        <div class = 'plusdefilm'>
+            <a  class="btnPlus">Plus de films</a>
+        </div>
+    </div>
+
+<!-- Featured Series--><!-- Featured Series--><!-- Featured Series--><!-- Featured Series--><!-- Featured Series-->
+    <div class="featured_global container" id ="FeaturedS"> 
+            <h2 class = "titre-section">FEATURED SERIES</h2>
+                <div class ='btn_global'>
+                    <a class = 'btnFeatured btnAll3'>All</a>
+                    <a class="btnFeatured btnAction3">Actions</a>
+                    <a class="btnFeatured btnPolicier3">Policiers</a>
+                    
+                </div>
+            <div class ='slideGlobal container'>
+                <div class= 'slideAction3 row'>
+                    <div class= "card_featured col-sm-6 col-md-2 " >
+                        <img class = 'img-fluid' src="assets/img/batmanmovie-2017-comedie.jpg" alt="batman">
+                        <h3>Batman movie</h3>
+                        <p class='p_featured' >2011</p>
+                    </div>
+                    <div class= "card_featured col-sm-6 col-md-2"  >
+                        <img class = 'img-fluid' src="assets/img/hostel-2005-thriller.jpg" alt="batman">
+                        <h3>Hostel</h3>
+                        <p class='p_featured'>2005</p>
+                    </div>
+                    <div class= "card_featured col-sm-6 col-md-2"  >
+                        <img class = 'img-fluid' src="assets/img/inception-2010-scifi.jpg" alt="batman">
+                        <h3>Inception</h3>
+                        <p class='p_featured'>2010</p>
+                    </div>
+                    <div class= "card_featured col-sm-6 col-md-2"  >
+                        <img class = 'img-fluid' src="assets/img/intouchables-2011-comedie.jpg" alt="batman">
+                        <h3>Intouchables</h3>
+                        <p class='p_featured'>2011</p>
+                    </div>
+                    <div class= "card_featured col-sm-6 col-md-2"  >
+                        <img class = 'img-fluid' src="assets/img/lepatientanglais-1996-dramatique.jpg" alt="batman">
+                        <h3>Le patient anglais</h3>
+                        <p class='p_featured'>1996</p>
+                    </div>
+                    <div class= "card_featured col-sm-6 col-md-2" >
+                        <img class = 'img-fluid ' src="assets/img/lesdeuxtours-2002-aventure.jpg" alt="batman">
+                        <h3>Les deux tours</h3>
+                        <p class='p_featured'>2002</p>
+                    </div>
+                </div>
+                <div class= 'slidePolicier3 row'>
+                    <div class= "card_featured col-sm-6 col-md-2 " >
+                        <img class = 'img-fluid' src="assets/img/seven-1995-thriller.jpg" alt="batman">
+                        <h3>Seven</h3>
+                        <p class='p_featured'>1995</p>
+                    </div>
+                    <div class= "card_featured col-sm-6 col-md-2" >
+                        <img class = 'img-fluid' src="assets/img/shutterisland-2010-thriller.jpg" alt="batman">
+                        <h3>Shutter island</h3>
+                        <p class='p_featured'>2010</p>
+                    </div>
+                    <div class= "card_featured col-sm-6 col-md-2" >
+                        <img class = 'img-fluid' src="assets/img/starwarsempire-1980-scifi.jpg" alt="batman">
+                        <h3>Star Wars</h3>
+                        <p class='p_featured'>1980</p>
+                    </div>
+                    <div class= "card_featured col-sm-6 col-md-2" >
+                        <img class = 'img-fluid' src="assets/img/Survivestyle5-2004-comedie.jpg" alt="batman">
+                        <h3>Survive style 5</h3>
+                        <p class='p_featured'>2004</p>
+                    </div>
+                    <div class= "card_featured col-sm-6 col-md-2" >
+                        <img class = 'img-fluid' src="assets/img/swissarmyman-2016-comedie.jpg" alt="batman">
+                        <h3>Swiss army man</h3>
+                        <p class='p_featured'>2016</p>
+                    </div>
+                    <div class= "card_featured col-sm-6 col-md-2" >
+                        <img class = 'img-fluid ' src="assets/img/thefall-2006-dramatique.jpg" alt="batman">
+                        <h3>The fall</h3>
+                        <p class='p_featured'>2006</p>
+                    </div>
+                </div>
+                <div class= 'slideAction4 row'>
+                    <div class= "card_featured col-md-2 " >
+                        <img class = 'img-fluid' src="assets/img/zoolander-2001-comedie.jpg" alt="batman">
+                        <h3>Zoolander</h3>
+                        <p class='p_featured'>2001</p>
+                    </div>
+                    <div class= "card_featured col-sm-6 col-md-2"  >
+                        <img class = 'img-fluid' src="assets/img/hostel-2005-thriller.jpg" alt="batman">
+                        <h3>Hostel</h3>
+                        <p class='p_featured'>2005</p>
+                    </div>
+                    <div class= "card_featured col-sm-6 col-md-2"  >
+                        <img class = 'img-fluid' src="assets/img/inception-2010-scifi.jpg" alt="batman">
+                        <h3>Inception</h3>
+                        <p class='p_featured'>2010</p>
+                    </div>
+                    <div class= "card_featured col-sm-6 col-md-2"  >
+                        <img class = 'img-fluid' src="assets/img/intouchables-2011-comedie.jpg" alt="batman">
+                        <h3>Intouchables</h3>
+                        <p class='p_featured'>2011</p>
+                    </div>
+                    <div class= "card_featured col-sm-6 col-md-2"  >
+                        <img class = 'img-fluid' src="assets/img/lepatientanglais-1996-dramatique.jpg" alt="batman">
+                        <h3>Le patient anglais</h3>
+                        <p class='p_featured'>1996</p>
+                    </div>
+                    <div class= "card_featured col-sm-6 col-md-2" >
+                        <img class = 'img-fluid ' src="assets/img/lesdeuxtours-2002-aventure.jpg" alt="batman">
+                        <h3>Les deux tours</h3>
+                        <p class='p_featured'>2002</p>
+                    </div>
+                </div>
+                <div class= 'slidePolicier4 row'>
+                    <div class= "card_featured col-sm-6 col-md-2 " >
+                        <img class = 'img-fluid' src="assets/img/WhatWeDoInTheShadows-2014-comedie.jpg" alt="batman">
+                        <h3>What we do</h3>
+                        <p class='p_featured'>2014</p>
+                    </div>
+                    <div class= "card_featured col-sm-6 col-md-2" >
+                        <img class = 'img-fluid' src="assets/img/shutterisland-2010-thriller.jpg" alt="batman">
+                        <h3>Shutter island</h3>
+                        <p>2010</p>
+                    </div>
+                    <div class= "card_featured col-sm-6 col-md-2" >
+                        <img class = 'img-fluid' src="assets/img/starwarsempire-1980-scifi.jpg" alt="batman">
+                        <h3>Star Wars</h3>
+                        <p class='p_featured'>1980</p>
+                    </div>
+                    <div class= "card_featured col-sm-6 col-md-2" >
+                        <img class = 'img-fluid' src="assets/img/Survivestyle5-2004-comedie.jpg" alt="batman">
+                        <h3>Survive style 5</h3>
+                        <p class='p_featured'>2004</p>
+                    </div>
+                    <div class= "card_featured col-sm-6 col-md-2" >
+                        <img class = 'img-fluid' src="assets/img/swissarmyman-2016-comedie.jpg" alt="batman">
+                        <h3>Swiss army man</h3>
+                        <p class='p_featured'>2016</p>
+                    </div>
+                    <div class= "card_featured col-sm-6 col-md-2" >
+                        <img class = 'img-fluid ' src="assets/img/thefall-2006-dramatique.jpg" alt="batman">
+                        <h3>The fall</h3>
+                        <p class='p_featured'>2006</p>
+                    </div>
+                </div>    
+            </div>
+            <div class = 'plusdefilm'>
+                <a  class="btnPlus4">Plus de Series</a>
+            </div>
+        </div>
+<!-- Shop movies--><!-- Shop movies--><!-- Shop movies--><!-- Shop movies--><!-- Shop movies--><!-- Shop movies-->
+
+    <section class="container-fluid shopmovies" id='shop'>
+        <div class="row">
+            <h2 class = "titre-section smovies">SHOP MOVIES</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-7 col-xs-12 sizecard">
+                <div class=" showcard">
+                    <div class="card bgcard col-sm-6 col-md-3">
+                        <img class="card-img-top" src="assets/img/batmanmovie-2017-comedie.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="sizepolice">Batman Movie 2017</p>
+                        </div>
+                    </div>
+                    <div class="card bgcard col-sm-6 col-md-3">
+                        <img class="card-img-top" src="assets/img/inception-2010-scifi.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="sizepolice">Inception 2010</p>
+                        </div>
+                    </div>
+                    <div class="card bgcard col-sm-6 col-md-3">
+                        <img class="card-img-top" src="assets/img/intouchables-2011-comedie.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="sizepolice">Intouchables 2011</p>
+                        </div>
+                    </div>
+                    <div class="card bgcard col-sm-6 col-md-3">
+                        <img class="card-img-top" src="assets/img/starwarsempire-1980-scifi.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="sizepolice">Star Wars 4 </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row showcard">
+                    <div class="card bgcard col-sm-6 col-md-3">
+                        <img class="card-img-top" src="assets/img/shutterisland-2010-thriller.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="sizepolice">Shutter Island 2010</p>
+                        </div>
+                    </div>
+                    <div class="card bgcard col-sm-6 col-md-3">
+                        <img class="card-img-top" src="assets/img/lesdeuxtours-2002-aventure.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="sizepolice">Les deux tours 2002</p>
+                        </div>
+                    </div>
+                    <div class="card bgcard col-sm-6 col-md-3">
+                        <img class="card-img-top" src="assets/img/hostel-2005-thriller.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="sizepolice">Hostel 2005</p>
+                        </div>
+                    </div>
+                    <div class="card bgcard col-sm-6 col-md-3">
+                        <img class="card-img-top" src="assets/img/WhatWeDoInTheShadows-2014-comedie.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="sizepolice">What we do in the shadows 2014</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5 col-xs-12">
+                <iframe class="video" width="100%" height="80%" src="https://www.youtube.com/embed/hd6dqh9BjHo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="  cardvideo col-xs-12 col-md-5">
+                    <p class="col-md-5 card-title">Description</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<!-- formulaire --><!-- formulaire --><!-- formulaire --><!-- formulaire --><!-- formulaire -->
+<section class = "sectionform container-fluid" id ="contact">
+        <h2 class="titre-section contactus">CONTACT US</h2>
+        <div class="botform container-fluid row">
+                <div class=" globalform row col-md-6 col-sm-12">
+                    <div class="col-md-6 col-sm-10">
+                        <form>
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Nom</label>
+                              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ex: Nom">
+                              <small id="emailHelp" class="form-text text-muted">Commencant par une majuscule.</small>
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputPassword1">Numéro de Téléphone</label>
+                              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="+(32)71.12.34.56">
+                            </div>
+                        </form>
+                    </div>
+            
+                    <div class="col-md-6 col-sm-10">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Prénom</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Prénom">
+                                <small id="emailHelp" class="form-text text-muted">Commencant par une majuscule.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Adresse Email</label>
+                                <input type="email" class="form-control" id="exampleInputPassword1" placeholder="info@allezcine.be">
+                            </div>
+                        </form>
+                    </div>
+            
+                    <div class="col-md-8 col-sm-10">
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Votre message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Ecrire votre message"></textarea>
+                        </div>
+                            <button type="button" class="btn btn-dark carcenter btnC" id="send-message">SEND MESSAGE</button>
+                        </div>
+                    </div>
+                    <div class = 'col-md-4 col-xs-10 container'>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.8550970189394!2d-73.99120918431396!3d40.74321387932863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a4291a0cf7%3A0xc3323504fe9875a5!2s1114+Broadway%2C+New+York%2C+NY+10010%2C+%C3%89tats-Unis!5e0!3m2!1sfr!2sbe!4v1542028494803" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!--Modal du formulaire-->
+<div id="modal-form"></div>
+                
+            </section>
+<!-- footer--><!-- footer--><!-- footer--><!-- footer--><!-- footer--><!-- footer-->
+<footer id="btnbot">
+    <section id="footer">
+           <h3>SUBSCRIBE TO US</h3> 
+                <div class="footersearch">   
+                    <form id="search-form" class="form-search form-horizontal">
+                        <input type="text" class="input-search " placeholder=" Enter your e-mail">
+                        <button type="submit" class="btn-search bg-red btnC"><a href="newsletter.html" target ="_blank">SUBSCRIBE</a></button>
+                    </form>
+                </div>
+        <div class="container-fluid footerGlobal">
+            <div class=" globalfootercenter row ">
+                <div class="col-md-1 col-sm-6 col-5 classfooter">
+                    <h5>RELEASE</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="javascript:void();"></i>2016</a></li>
+                        <li><a href="javascript:void();">></i>2015</a></li>
+                        <li><a href="javascript:void();"></i>2014</a></li>
+                        <li><a href="javascript:void();"></i>2013</a></li>
+                        <li><a href="javascript:void();"></i>2012</a></li>
+                        <li><a href="javascript:void();"></i>2011</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-1 col-sm-6  col-5 classfooter">
+                    <h5>MOVIES</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="javascript:void();"></i>ADVENTURE</a></li>
+                        <li><a href="javascript:void();"></i>COMEDY</a></li>
+                        <li><a href="javascript:void();"></i>FANTASY</a></li>
+                        <li><a href="javascript:void();"></i>ACTION</a></li>
+                        <li><a href="javascript:void();"></i>MOVIES</a></li>
+                        <li><a href="javascript:void();"></i>HORROR</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-6 classfooter">
+                    <h5 class="title">REVIEW MOVIES</h5>
+                    <div class="category">
+                        <a class="categorylink" href="#">Comedy</a>
+                        <a class="categorylink" href="#">Horror</a>
+                        <a class="categorylink" href="#">Historical</a>
+                        <a class="categorylink" href="#">Romantic</a>
+                        <a class="categorylink" href="#">Love</a>
+                        <a class="categorylink" href="#">Action</a>
+                        <a class="categorylink" href="#">Reviews</a>
+                        <a class="categorylink" href="#">Horror</a>
+                        <a class="categorylink" href="#">Historical</a>
+                        <a class="categorylink" href="#">Romantic</a>
+                        <a class="categorylink" href="#">Love</a>
+                        <a class="categorylink" href="#">Comedy</a>
+                        <a class="categorylink" href="#">Horror</a>
+                        <a class="categorylink" href="#">Historical</a>       
+                    </div>
+                </div>  
+                <div class="col-md-2 col-sm-6 classfooter">
+                <h5 class="title">LATEST MOVIES</h5>
+                    <div class="footer_part">
+                        <div class="footer_blog_area">
+                            <div class="footer_thumb">
+                                <img class="img-fluid" src="assets/img/inception-2010-scifi.jpg" alt="">
+                            </div>
+                        <a href="#">Inception</a>
+                        <p class="footer_latest_movies">2010</p>
+                        </div>
+                        <div class="footer_blog_area">
+                            <div class="footer_thumb">
+                            <img class="img-fluid" src="assets/img/shutterisland-2010-thriller.jpg" alt="">
+                            </div>
+                            <a href="#">Shutter island</a>
+                            <p class="footer_latest_movies">2010</p>
+                        </div>
+                        <div class="footer_blog_area">
+                            <div class="footer_thumb">
+                            <img class="img-fluid" src="assets/img/lesdeuxtours-2002-aventure.jpg" alt="">
+                            </div>
+                            <a href="#">les deux tours</a>
+                            <p class="footer_latest_movies">2002</p>
+                        </div>
+                        </div>
+                    </div>
+                <div class="col-md-3 logofooter col-sm-6 classfooter">
+                        <img src="assets/img/logoallezcine.png" alt="logoallezcine"><br>
+                    <div class ="globalimage row">
+                        <div class=" col-md-4 col-sm-6 col-6" >
+                            <img class='img-fluid' src="assets/img/batmanmovie-2017-comedie.jpg" alt="batman">
+                        </div>
+                        <div class=" col-md-4 col-sm-6 col-6" >
+                            <img  class='img-fluid' src="assets/img/zoolander-2001-comedie.jpg" alt="batman">
+                        </div>
+                        <div class=" col-md-4 col-sm-6 col-6" >
+                            <img class='img-fluid' src="assets/img/thefall-2006-dramatique.jpg" alt="batman">
+                        </div>
+                        <div class=" col-md-4 col-sm-6 col-6" >
+                            <img class='img-fluid' src="assets/img/lepatientanglais-1996-dramatique.jpg" alt="batman">
+                        </div>
+                        <div class=" col-md-4 col-sm-6 col-6" >
+                            <img class='img-fluid' src="assets/img/hostel-2005-thriller.jpg" alt="batman">
+                        </div>
+                        <div class=" col-md-4 col-sm-6 col-6" >
+                            <img class='img-fluid' src="assets/img/seven-1995-thriller.jpg" alt="batman">
+                        </div>
+                    </div>
+                </div> 
+
+                </div>
+            </div>
+        </div>      
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">                    
+                    <ul class="list-unstyled list-inline social text-center">
+                        <li class="list-inline-item"><a><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a><i class="fab fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a><i class='fab fa-dribbble'></i></a></li>
+                        <li class="list-inline-item"><a><i class="fab fa-google-plus"></i></a></li>
+                        <li class="list-inline-item"><a target="_blank"><i class="fa fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>	
+        </div>
+    </section>
+</footer>
+
+<!-- Modal movies --><!-- Modal movies --><!-- Modal movies --><!-- Modal movies -->
+<!-- Batman -->
+<div class="modal fade" id="batman" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Batman Movie</h3>
+        </div>
+        <div class="modal-body">
+                <iframe class="video" width="100%" height="100%" src="https://www.youtube.com/embed/hd6dqh9BjHo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p> Description:</p>
+                <p> grands changements s'en viennent à Gotham, 
+                   alors s'il tient vraiment à libérer la ville de l'emprise 
+                   impitoyable du Joker, Batman devra sans doute laisser tomber
+                   son statut de justicier solitaire, s'efforcer de travailler
+                   en équipe, et peut-être, seulement peut-être, apprendre à se
+                   détendre.</p>
+          <p>Réalisateur: Chris McKay</p>
+          <p>Année sortie: 2017</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div> 
+    </div>
+  </div>
+ <!-- Inception -->
+ <div class="modal fade" id="inception" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">Inception</h3>
+            </div>
+            <div class="modal-body">
+                    <iframe width=100% height=100% src="https://www.youtube.com/embed/HcoZbHBDHQA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p> Description:</p>
+                    <p> Dom Cobb est un voleur expérimenté dans l'art périlleux 
+                         `l'extraction' : sa spécialité consiste à s'approprier
+                         les secrets les plus précieux d'un individu, enfouis au
+                         plus profond de son subconscient, pendant qu'il rêve et
+                         que son esprit est particulièrement vulnérable. 
+                         Très recherché pour ses talents dans l'univers trouble
+                         de l'espionnage industriel, Cobb est aussi devenu un fugitif 
+                         traqué dans le monde entier. Cependant, une ultime mission
+                         pourrait lui permettre de retrouver sa vie d'avant.</p>
+              <p>Réalisateur: Christopher Nolan</p>
+              <p>Année sortie: 2010</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div> 
+        </div>
+      </div>
+ <!-- Intouchable -->
+ <div class="modal fade" id="intouchable" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">Intouchable</h3>
+            </div>
+            <div class="modal-body">
+                    <iframe width=100% height=100% src="https://www.youtube.com/embed/cXu2MhWYUuE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p> Description:</p>
+                    <p>Tout les oppose et il était peu probable qu'ils 
+                       se rencontrent un jour, et pourtant. Philippe,
+                       un riche aristocrate devenu tétraplégique après
+                       un accident de parapente va engager Driss, 
+                       un jeune homme d'origine sénégalaise tout droit
+                       sorti de prison, comme auxiliaire de vie à domicile.
+                       Pourquoi lui ? Tout simplement parce qu'il
+                       ne regarde pas Philippe avec le même regard
+                       de pitié que les autres candidats.</p>
+              <p>Réalisateur: Olivier Nakache</p>
+              <p>Année sortie: 2010</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div> 
+        </div>
+      </div>
+       <!-- Shutter Island -->
+       <div class="modal fade" id="shutter" role="dialog">
+            <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title">Shutter Island</h3>
+                </div>
+                <div class="modal-body">
+                        <iframe width=100% height=100% src="https://www.youtube.com/embed/Hz0ToXuAxag" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p> Description:</p>
+                        <p> L'invraisemblable évasion 
+                            d'une meurtrière rusée amène 
+                            le marshal Teddy Daniels et son
+                            nouveau partenaire à l'hôpital 
+                            Ashecliffe, un asile psychiatrique 
+                            situé sur une île lointaine et balayée par 
+                            les vents. Il apparaît que la femme a disparu 
+                            d'une chambre fermée à clef et il y a des indices 
+                            d'actes effroyables commis au sein de l'hôpital.
+                            Alors que l'enquête piétine, Teddy réalise 
+                            qu'il doit faire face à ses propres démons 
+                            s'il veut quitter l'île en vie</p>
+                  <p>Réalisateur: Martin Scorsese</p>
+                  <p>Année sortie: 2010</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div> 
+            </div>
+          </div>
+ <!-- star wars -->
+ <div class="modal fade" id="star" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">Star Wars 4</h3>
+            </div>
+            <div class="modal-body">
+                    <iframe width=100% height=100% src="https://www.youtube.com/embed/HKQgMXvgxsM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p> Description:</p>
+                    <p> Il y a bien longtemps, dans une galaxie très lointaine. 
+                        La guerre civile fait rage entre l'Empire galactique 
+                        et l'Alliance rebelle. Capturée par les troupes de 
+                        choc de l'Empereur menées par le sombre et impitoyable 
+                        Dark Vador, la princesse Leia Organa dissimule les 
+                        plans de l'Etoile Noire, une station spatiale 
+                        invulnérable, à son droïde R2-D2 avec pour mission 
+                        de les remettre au Jedi Obi-Wan Kenobi.</p>
+              <p>Réalisateur: George Lucas</p>
+              <p>Année sortie: 1980</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div> 
+        </div>
+      </div>
+
+</main>   
+<script src = 'assets/js/anime.js'></script>
+<script src ='assets/js/modal18.js'></script>
+<script src ='assets/js/cookie.js'></script>
+<script src ='assets/js/navbar.js'></script>
+<script src ='assets/js/btnArrow.js'></script>
+<script src ='assets/js/modal-form.js'></script>
+
+</body>
+</html>

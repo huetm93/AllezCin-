@@ -7,5 +7,4 @@ projet de reproduction effectué en groupe :
 * Maxime: https://github.com/huetm93
 * Ruben : https://github.com/RubenPereiraC
 * Nathan : https://github.com/nathanhennaux
-
-Et moi meme.
+* Jonathan : https://github.com/JonathanFauchoux
